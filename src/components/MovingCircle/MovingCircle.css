@@ -1,0 +1,267 @@
+#circle-container,
+#circle4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#circle-container {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  overflow: hidden;
+  /* margin: 20px; */
+  z-index: 2;
+}
+
+#circle {
+  position: fixed;
+  width: 510px;
+  height: 490px;
+  border-radius: 42%;
+  animation: rotate 20s infinite linear;
+  z-index: 2;
+  background-color: rgb(164, 233, 210);
+}
+
+#circle2 {
+  position: fixed;
+  width: 430px;
+  height: 530px;
+  border-radius: 48%;
+  animation: rotate-back 25s infinite linear;
+  z-index: 2;
+    background-color: rgb(127, 255, 212);
+
+}
+
+#circle3 {
+  position: fixed;
+  width: 525px;
+  height: 460px;
+  border-radius: 50%;
+  animation: rotate 30s infinite linear;
+  z-index: 2;
+  background-color: rgb(76, 224, 175);
+
+}
+
+#circle4 {
+  position: fixed;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  z-index: 2;
+  background-color: rgb(36, 202, 147);
+
+}
+
+@keyframes rotate {
+  from{
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate-back {
+  from{
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  /* body {
+    flex-direction: column;
+  }
+
+  #particles-js {
+    width: 100%; 
+    height: 60%; 
+    top: 0;
+  }
+
+  #details-container {
+    margin-top: 0;
+  }
+
+  #area {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  #status {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 10px;
+  } */
+
+  #circle-container {
+    height: 270px;
+    width: 100%
+  }
+
+  #circle {
+    width: 270px;
+    height: 230px;
+  }
+
+  #circle2 {
+    width: 265px;
+    height: 200px;
+  }
+
+  #circle3 {
+    width: 267px;
+    height: 240px;
+  }
+
+  #circle4 {
+    width: 250px;
+    height: 250px;
+  }
+/* 
+  #good div,
+  #moderate div,
+  #bad div,
+  #unhealthy div,
+  #dangerous div,
+  #hazardous div {
+    width: 10px;
+    height: 10px;
+  }
+
+  p {
+    font-size: 10px;
+  } */
+}
+
+@media only screen and (min-width: 621px) and (max-width: 800px){
+  /* body {
+    flex-direction: row;
+  }
+
+  #good div,
+  #moderate div,
+  #bad div,
+  #unhealthy div,
+  #dangerous div,
+  #hazardous div {
+    width: 10px;
+    height: 10px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  #particles-js {
+    width: 100%; 
+    height: 100%; 
+  }
+
+  #area {
+    font-size: 30px;
+  }
+
+  #status {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin: 10px;
+  } */
+
+  #circle-container {
+    height: 310px;
+    width: 310px;
+  }
+
+  #circle {
+    width: 310px;
+    height: 270px;
+  }
+
+  #circle2 {
+    width: 305px;
+    height: 240px;
+  }
+
+  #circle3 {
+    width: 307px;
+    height: 280px;
+  }
+
+  #circle4 {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  /* body {
+    flex-direction: row;
+  }
+
+  #good div,
+  #moderate div,
+  #bad div,
+  #unhealthy div,
+  #dangerous div,
+  #hazardous div {
+    width: 10px;
+    height: 10px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+
+  #area {
+    font-size: 40px;
+  }
+
+  #status {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 25px;
+    margin: 15px;
+  } */
+
+  #circle-container {
+    height: 370px;
+    width: 370px;
+  }
+
+  #circle {
+    width: 370px;
+    height: 350px;
+  }
+
+  #circle2 {
+    width: 365px;
+    height: 250px;
+  }
+
+  #circle3 {
+    width: 360px;
+    height: 320px;
+  }
+
+  #circle4 {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  /* body {
+    flex-direction: row;
+  } */
+}
