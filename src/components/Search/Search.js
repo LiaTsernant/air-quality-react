@@ -8,7 +8,7 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="search-box">
         <form>
           <label for="city-input">Enter City or ZIP Code:</label>
           <input type="text" id="city-input" />
