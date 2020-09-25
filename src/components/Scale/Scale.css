@@ -1,0 +1,71 @@
+#scale {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+#good,
+#moderate,
+#bad,
+#unhealthy,
+#dangerous,
+#hazardous {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+#good div,
+#moderate div,
+#bad div,
+#unhealthy div,
+#dangerous div,
+#hazardous div
+ {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+#good div {
+  background-color: rgba(14, 185, 128, 1);
+}
+
+#moderate div {
+  background-color: rgba(236, 196, 16, 1);
+}
+
+#bad div {
+  background-color:rgba(236, 141, 16, 1);
+}
+
+#unhealthy div {
+  background-color: rgba(236, 16, 16, 1);
+}
+
+#dangerous div {
+  background-color:rgba(187, 6, 133, 1);
+}
+
+#hazardous div {
+  background-color: rgba(98, 4, 70, 1);
+}
+
+@media only screen and (max-width: 1200px) {
+  #good div,
+  #moderate div,
+  #bad div,
+  #unhealthy div,
+  #dangerous div,
+  #hazardous div {
+    width: 10px;
+    height: 10px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+}
