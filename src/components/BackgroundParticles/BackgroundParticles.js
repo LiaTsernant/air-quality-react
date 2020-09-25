@@ -1,9 +1,10 @@
 import React from 'react';
 import Particles from 'react-particles-js';
+import './BackgroundParticles.css'
 
 function BackgroundParticles() {
   return (
-    <div>
+    <div id="particles">
       <Particles
         params={{
           "particles": {
@@ -15,7 +16,7 @@ function BackgroundParticles() {
               }
             },
             "color": {
-              "value": "#000"
+              "value": "#0f0"
             },
             "shape": {
               "type": "circle",
@@ -25,7 +26,7 @@ function BackgroundParticles() {
               },
             },
             "opacity": {
-              "value": 0.5,
+              "value": 0.4,
               "random": false,
               "anim": {
                 "enable": false,
@@ -35,7 +36,7 @@ function BackgroundParticles() {
               }
             },
             "size": {
-              "value": 10,
+              "value": 4,
               "random": true,
               "anim": {
                 "enable": false,
