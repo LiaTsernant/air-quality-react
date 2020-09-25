@@ -1,0 +1,20 @@
+#area {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+#data {
+  margin: 20px 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  #area {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+
+  #data {
+    margin: 10px 0;
+  }
+
+}
