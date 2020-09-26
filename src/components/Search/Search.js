@@ -7,8 +7,9 @@ class Search extends React.Component {
     inputField: '',
   }
 
-  handleSearch = (val) => {
-    console.log(val)
+  handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(this.state.inputField)
     // this.props.handleSearchEnter
   }
 
@@ -18,19 +19,19 @@ class Search extends React.Component {
         inputField: val,
       })
     }
-  }, 400);
+  }, 300);
 
 
   render() {
     return (
       <div id="search-box">
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <label htmlFor="city-input">Enter City or ZIP Code:</label>
           <div id="search-field">
             <input type="text"
               id="city-input"
               onChange={(e) => this.handleChange(e.target.value)} />
-            <img id="search-img" src="search.png" alt="search"/>
+            <img id="search-img" src="search.png" alt="search" onClick={this.handleSubmit}/>
           </div>
         </form>
       </div>
