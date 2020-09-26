@@ -3,10 +3,10 @@ import './MovingCircle.css';
 
 function MovingCircle(props) {
   let airStatus = props.airStatus || "Good";
-  let circle1Style = { 'background-color': props.colors ? props.colors[0] : 'rgb(164, 233, 210)' };
-  let circle2Style = { 'background-color': props.colors ? props.colors[1] : 'rgb(127, 255, 212)' };
-  let circle3Style = { 'background-color': props.colors ? props.colors[2] : 'rgb(76, 224, 175)' };
-  let circle4Style = { 'background-color': props.colors ? props.colors[3] : 'rgb(36, 202, 147)' }
+  let circle1Style = { 'backgroundColor': props.colors ? props.colors[0] : 'rgb(164, 233, 210)' };
+  let circle2Style = { 'backgroundColor': props.colors ? props.colors[1] : 'rgb(127, 255, 212)' };
+  let circle3Style = { 'backgroundColor': props.colors ? props.colors[2] : 'rgb(76, 224, 175)' };
+  let circle4Style = { 'backgroundColor': props.colors ? props.colors[3] : 'rgb(36, 202, 147)' }
 
   return (
     <div id="circle-container">
