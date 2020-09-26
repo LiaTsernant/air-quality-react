@@ -22,7 +22,7 @@ label {
 }
 
 input {
-  width: 300px;
+  width: 250px;
   height: 60px;
   border-top-style: hidden;
   border-right-style: hidden;
@@ -37,6 +37,23 @@ input {
   outline: none;
 }
 
+#search-field {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#search-img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin: 20px;
+}
+
+#search-img:hover {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 400px) {
   label {
     font-size: 13px;
@@ -46,5 +63,15 @@ input {
   form {
     width: 200px;
     height: 200px;
+  }
+
+  input {
+    width: 150px;
+  }
+
+  #search-img {
+    width: 10px;
+    /* height: 10px; */
+    margin: 10px;
   }
 }

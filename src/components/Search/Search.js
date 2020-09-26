@@ -22,7 +22,12 @@ class Search extends React.Component {
       <div id="search-box">
         <form>
           <label htmlFor="city-input">Enter City or ZIP Code:</label>
-          <input type="text" id="city-input" onChange={(e) => this.search(e.target.value)}/>
+          <div id="search-field">
+            <input type="text"
+              id="city-input"
+              onChange={(e) => this.search(e.target.value)} />
+            <img id="search-img" src="search.png" alt="search"/>
+          </div>
         </form>
       </div>
     )
