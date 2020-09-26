@@ -12,8 +12,12 @@ class Search extends React.Component {
     // this.props.handleSearchEnter
   }
 
-  search = debounce((text) => {
-    console.log(text)
+  handleChange = debounce((val) => {
+    if (val !== "") {
+      this.setState({
+        inputField: val,
+      })
+    }
   }, 400);
 
 
@@ -25,7 +29,7 @@ class Search extends React.Component {
           <div id="search-field">
             <input type="text"
               id="city-input"
-              onChange={(e) => this.search(e.target.value)} />
+              onChange={(e) => this.handleChange(e.target.value)} />
             <img id="search-img" src="search.png" alt="search"/>
           </div>
         </form>
