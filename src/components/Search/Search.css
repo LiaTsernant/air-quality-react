@@ -62,16 +62,20 @@ input {
 
   form {
     width: 200px;
-    height: 200px;
+    height: 100px;
   }
 
   input {
     width: 150px;
+    font-size: 15px;
   }
 
   #search-img {
     width: 10px;
-    /* height: 10px; */
     margin: 10px;
+  }
+
+  #search-box {
+    height: 100px;
   }
 }
