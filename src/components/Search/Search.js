@@ -13,6 +13,7 @@ class Search extends React.Component {
     // this.props.handleSearchEnter
   }
 
+  // Waiting till user paused their input and then update state for preventing updates on each character
   handleChange = debounce((val) => {
     if (val !== "") {
       this.setState({

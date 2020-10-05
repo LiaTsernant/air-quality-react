@@ -4,7 +4,8 @@ class AirDataAPIModel {
   }
 
   static getDataByCityName = (cityName) => {
-    fetch(`https://air-quality-data-app.herokuapp.com/api/v1/get_by_city_name/${cityName}`).then(res => res.json());
+    // AirNow API doesn't have an option to get data by city name.
+    // Need to convert city name to zip code and call getDataByZipCode(...)
   }
 }
 

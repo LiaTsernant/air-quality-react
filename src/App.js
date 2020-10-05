@@ -13,17 +13,11 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    // //store {starredZipCode: 12345}
-    // let zipCode = localStorage.getItem('starredZipCode');
-    // if (undefined !== zipCode && zipCode !== '') {
-    //   AirDataAPIModel.getDataByZipCode(zipCode).then(res => {
-    //     console.log(res)
-    //   })
-    // }
+    // Will grab zipcode from localStorage if user saved a city and load data about this city when user opens an app.
   }
 
   handleSearchEnter = (val) => {
-    console.log(val);
+    // console.log(val);
   }
 
   render() {
