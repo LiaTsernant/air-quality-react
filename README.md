@@ -1,4 +1,5 @@
 # Air Quality App (React part)
+
 Backend part [here](https://github.com/LiaTsernant/air-quality)
 
 ![Air Quality App](assets/airQuality.png)
