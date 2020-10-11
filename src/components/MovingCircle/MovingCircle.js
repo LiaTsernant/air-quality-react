@@ -1,12 +1,14 @@
 import React from 'react';
 import './MovingCircle.css';
+import PALETTE from './Palette';
 
 function MovingCircle(props) {
-  let airStatus = props.airStatus || "Good";
-  let circle1Style = { 'backgroundColor': props.colors ? props.colors[0] : 'rgb(164, 233, 210)' };
-  let circle2Style = { 'backgroundColor': props.colors ? props.colors[1] : 'rgb(127, 255, 212)' };
-  let circle3Style = { 'backgroundColor': props.colors ? props.colors[2] : 'rgb(76, 224, 175)' };
-  let circle4Style = { 'backgroundColor': props.colors ? props.colors[3] : 'rgb(36, 202, 147)' }
+  let airStatus = props.airStatus || "";
+  let palette = PALETTE[airStatus] || PALETTE['Good'];
+  let circle1Style = { 'backgroundColor': palette[0] };
+  let circle2Style = { 'backgroundColor': palette[1] };
+  let circle3Style = { 'backgroundColor': palette[2] };
+  let circle4Style = { 'backgroundColor': palette[3] }
 
   return (
     <div id="circle-container">

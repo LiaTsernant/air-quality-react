@@ -2,7 +2,7 @@ import React from 'react';
 import Particles from 'react-particles-js';
 import './BackgroundParticles.css'
 
-function BackgroundParticles() {
+function BackgroundParticles(props) {
   return (
     <div id="particles">
       <Particles
@@ -16,13 +16,13 @@ function BackgroundParticles() {
               }
             },
             "color": {
-              "value": "#0f0"
+              "value": `${props.particlesColor}`
             },
             "shape": {
               "type": "circle",
               "stroke": {
                 "width": 0,
-                "color": "#000000"
+                "color": '#000000'
               },
             },
             "opacity": {
